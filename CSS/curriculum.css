@@ -1,0 +1,154 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'pokemon-font';
+  src: url('font/pokemon-font.eot'); /* IE9 Compat Modes */
+  src: url('font/pokemon-font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/pokemon-font.woff2') format('woff2'), /* Super Modern Browsers */
+       url('font/pokemon-font.woff') format('woff'), /* Pretty Modern Browsers */
+       url('font/pokemon-font.ttf')  format('truetype') /* Safari, Android, iOS */
+  /* There is no SVG version of this font due to support being dropped in SVG 2 */
+}
+
+body {
+  font-size: 10px;
+  -webkit-font-smoothing: none;
+  font-family: 'pokemon-font', monospace;
+  list-style: inside;
+  text-indent: 0.4cm;
+  list-style-image: url('Img/pokelist.png');
+
+  color: white;
+  background-image: url("Img/Back.gif");
+  /* Full height */
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#containerMain{
+  display: flex;
+  flex-direction: column;
+}
+
+#container1,#container3,#container4{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#footer{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+}
+
+#container1{
+  order: 1;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+#datos{
+
+  order: 1;
+  display: flex;
+  flex-direction: row;
+  width: 807px;
+  height: 200px:
+  margin: 10px ;
+  /* justify-content: center; */
+  align-items: center;
+}
+#h2{
+  order: 1;
+}
+
+#texto{
+  order: 2;
+}
+
+#img{
+  order: 3;
+}
+#img2{
+  width: 180px;
+  height: 180px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+#container2{
+  order: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ #EXP{
+  order: 1;
+  font-size: 12px;
+  width: 395px;
+  height: 140px;
+  margin: 10px;
+}
+
+#HOBB{
+  order: 2;
+  width: 395px;
+  height: 140px;
+  font-size: 14px;
+  margin: 10px;
+}
+
+#container3{
+  order: 3;
+}
+
+#HAB{
+  width: 810px;
+  height: 195px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+#tbHab{
+  text-align: right;
+  left: 15px;
+  text-indent: 2cm;
+}
+
+tr:hover {background-color: rgba(0, 0, 0, 0.6);}
+
+#container4{
+  order: 4;
+}
+
+
+#Ref{
+  width: 810px;
+  height: 125px;
+  margin: 10px;
+}
+
+#Ref,#HOBB,#HAB,#datos, #EXP{
+  background-color: rgba(	112,138,144, 0.5);
+}
+
+#footer{
+  order: 5;
+}
+
+#god{
+  order: 1;
+  margin: auto;
+  top: 8px;
+}
